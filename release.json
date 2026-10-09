@@ -1,10 +1,10 @@
 {
-  "version": "donation-1009",
+  "version": "restaurant-only-1009",
   "files": [
     {
       "name": "index.html",
       "size": 8385,
-      "sha256": "5e1134743654230c9d51a624a1f1ac8f0252d2a60e689301dfaeaed76c314313"
+      "sha256": "91ea93a4835d6ee04d1009a3ecbad0dfe41498f85947bb844acfdf786c7eaf17"
     },
     {
       "name": "index.js",
@@ -18,44 +18,56 @@
     },
     {
       "name": "index.pck",
-      "size": 428661280,
-      "sha256": "f1d694df3487f2038c3817056e66223a574f5b031c2305b30c991dc6e69e7346",
+      "size": 301324388,
+      "sha256": "339db655bf8e72effade8949d21b34e45030d3994e8dbf8a531c10badd9fa437",
       "chunks": [
         {
           "name": "index.pck.gz.part000",
-          "sha256": "e6fbfeee73ccf3b326cb7683617ccb30130a598776ae04a2c3bd2d2d8f1cdfe1"
+          "sha256": "f2dd940aeb14856b1625e727d8435abf46e57038c116c852bcf795b38913db46"
         },
         {
           "name": "index.pck.gz.part001",
-          "sha256": "3a89ce64979623d105a290bd4ca96cc18528fae83aa5f8f551e081b78295b433"
+          "sha256": "6e6a597285ca65c2bdd4e212de931cc2189b60375aa169a0a426e8028907fff1"
         },
         {
           "name": "index.pck.gz.part002",
-          "sha256": "15942a87afc8115f06ad14ee6e55668f80d611562354f5888afb6b867a912d52"
+          "sha256": "eaa060f9e6d43f9cdf778648015e2f35dcd094dd1f404b6ac9db04ce66e6e219"
         },
         {
           "name": "index.pck.gz.part003",
-          "sha256": "fee3ada01996e237d7c9ef6937a97b381d0244b9679e80444838c69e7249a68a"
+          "sha256": "3be55320dfc886745acc428c401b8b86a2758e581de38759adaedf85260b1daa"
         },
         {
           "name": "index.pck.gz.part004",
-          "sha256": "68b6ad1059db7a6a4241f3b9caa3e979c775c259a0cf35cccce564706f898d27"
+          "sha256": "cbf509a29c440e11c9f5d0ce7ef9993f2029afd9d8dc1796ca53eaf28ce37963"
         },
         {
           "name": "index.pck.gz.part005",
-          "sha256": "071bea79f21cbc236efdf64d6dfb836ce881970a22401c53f171bc80080f31b7"
+          "sha256": "94799a2c3e95b38258a2b702c8d7cbc66b70502bdea6a490a579d1dff361a24d"
         },
         {
           "name": "index.pck.gz.part006",
-          "sha256": "8e769cbc60d7aab5aee85bd82f5a7a3c4d77b92b2b620f6e3246de45a058fc59"
+          "sha256": "ebaf08d01b1f218a6b693320b001d9441dcbf7db398a04dff3df4eeb27fdc177"
         },
         {
           "name": "index.pck.gz.part007",
-          "sha256": "4c5ac3bec681c22241c2144eba2a869940fafb5c7ad5726cbe76a5f1dca19ed5"
+          "sha256": "ea73b18e62bc867b7909cc4c8ff05bf1240bbc504bc6ace43cdd4cad4f3c7829"
         },
         {
           "name": "index.pck.gz.part008",
-          "sha256": "e0cf62a918408687f2bbce36313f71ba023cf907522d4a89186e9c69ef8cd421"
+          "sha256": "4d06d1bc3f13d76647993d1cf504d4782bde4332abf99bef2bcecf1b88931f41"
+        },
+        {
+          "name": "index.pck.gz.part009",
+          "sha256": "fdf332b546fc02a9169817fd5314efc68557ee096f44f69949649399695357fb"
+        },
+        {
+          "name": "index.pck.gz.part010",
+          "sha256": "6b1384910fd102a0e2643349ffb65692a82efd224daf0af89483e45926049e04"
+        },
+        {
+          "name": "index.pck.gz.part011",
+          "sha256": "534ecd75221b6bd86bc9f692afaecd62ef27410ed16bf32b3bb0ec9086536762"
         }
       ]
     },
