@@ -1,10 +1,10 @@
 {
-  "version": "restaurant-only-1009",
+  "version": "startup-cache-1009",
   "files": [
     {
       "name": "index.html",
-      "size": 8385,
-      "sha256": "91ea93a4835d6ee04d1009a3ecbad0dfe41498f85947bb844acfdf786c7eaf17"
+      "size": 9018,
+      "sha256": "0a3e9e39d611841412b449d742ebe2076c00b4711c7eaf523c2509d2ca9f7d6d"
     },
     {
       "name": "index.js",
@@ -100,6 +100,16 @@
       "name": "cafe-vignette-v1.png",
       "size": 1717139,
       "sha256": "354b55b1e7201607a5e224d3537dfdd61406b0f8f36f4714c17db8c0b41d2a36"
+    },
+    {
+      "name": "startup-cache.js",
+      "size": 6852,
+      "sha256": "35ed2b4a945fa250415b751b99308e631b2fee40c0190a91f348304dbee68c29"
+    },
+    {
+      "name": "startup-assets.json",
+      "size": 299,
+      "sha256": "e3d233b2cd55ebd9e47c0e2ff17238083b4a0b9d3c5f18bed9beb106127ded4f"
     },
     {
       "name": "FONT-LICENSE.txt",

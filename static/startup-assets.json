@@ -1,0 +1,12 @@
+{
+  "assets": {
+    "index.wasm": {
+      "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
+      "size": 39514754
+    },
+    "index.pck": {
+      "sha256": "339db655bf8e72effade8949d21b34e45030d3994e8dbf8a531c10badd9fa437",
+      "size": 301324388
+    }
+  }
+}

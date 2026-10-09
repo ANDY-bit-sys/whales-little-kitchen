@@ -12,6 +12,7 @@
 .loading-spinner{display:inline-block;flex:none;width:22px;height:22px;border:3px solid rgba(255,249,234,.32);border-top-color:#fff9ea;border-right-color:#e6c477;border-radius:50%;animation:loading-turn .9s linear infinite}
 .card{border-color:#bf965c;background-color:#fffaf0;background-image:radial-gradient(circle at 8px 8px,transparent 4px,#dec6a7 4.5px,#dec6a7 5px,transparent 5.5px);background-size:16px 16px;animation:storybook-open .45s ease-out}.card:before{inset:16px;border-color:#d9bea0;background:#fffaf0;z-index:0}.card>*{position:relative;z-index:1}.card:after{content:"";position:absolute;bottom:5px;right:40px;width:40px;height:22px;background:#c88885;clip-path:polygon(0 0,50% 35%,100% 0,96% 70%,62% 53%,73% 100%,52% 83%,41% 100%,35% 53%,4% 70%)}.mark{width:250px;height:115px;background:none;border:0;border-radius:0;margin:20px auto 14px}.mark img{width:100%;height:100%;object-fit:contain}.eyebrow{color:#a0804f}h1{letter-spacing:2px}.small:before{width:90px;background:#d8b989}#start{outline:1px solid rgba(255,243,207,.6);outline-offset:-5px;transition:transform .18s,background .18s}#start:hover:enabled{transform:translateY(-2px) scale(1.025)}#start:active:enabled{transform:scale(.97)}@keyframes storybook-open{from{opacity:0;transform:translateY(12px) scale(.96)}to{opacity:1;transform:none}}@media(max-height:640px){.mark{width:170px;height:80px;margin:12px auto}}@media(prefers-reduced-motion:reduce){.card{animation:none}#start{transition:none}.loading-spinner{animation-duration:2s}}
 #loading[data-state="ready"] .loading-spinner,#loading[data-state="failed"] .loading-spinner{display:none}
+.first-start-note{font-size:12px;line-height:1.7;color:#8b8877;margin:4px 0 12px}
 @keyframes loading-turn{to{transform:rotate(360deg)}}
 </style>
 </head>
@@ -19,6 +20,8 @@
 <canvas id="canvas" tabindex="0" aria-label="大肥鱼的小饭馆，鼠标操作经营游戏"></canvas>
 <div id="loading" data-state="loading" aria-busy="true"><main class="card"><div class="eyebrow">WHALE'S LITTLE KITCHEN</div><div class="mark" aria-hidden="true"><img src="cafe-vignette-v1.png" alt=""></div><h1>大肥鱼的小饭馆</h1><p>一家小店，慢慢经营。<br>让每一碗白饭，都带一点温柔。</p><progress id="progress" value="0" max="1" aria-label="小饭馆加载进度"></progress><div id="message" role="status">正在为小店生火……</div><button id="start" disabled><span class="loading-spinner" aria-hidden="true"></span><span id="start-label">正在加载</span></button><div class="small">拖放食材 · 空格暂停<br>你来配料，豆包掌勺，大肥鱼把热饭送到客人桌上。</div></main></div>
 <noscript>请启用 JavaScript 后再打开游戏。</noscript>
+<script>const firstStartNote=document.createElement('p');firstStartNote.className='first-start-note';firstStartNote.textContent='第一次启动可能会稍慢，请耐心等候';document.getElementById('message').after(firstStartNote);</script>
+<script src="startup-cache.js"></script>
 <script src="index.js"></script>
 <script>
 const config = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":301324388,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
@@ -37,9 +40,10 @@ let ready = false;
 let started = false;
 const missing = Engine.getMissingFeatures({threads:false});
 function loadState(state){loading.dataset.state=state;loading.setAttribute('aria-busy',String(state==='loading'));}
-function failure(error){console.error(error);loadState('failed');message.textContent='加载未完成，请检查网络后刷新重试。'+String(error.message||error);startLabel.textContent='刷新重试';start.disabled=false;start.onclick=()=>location.reload();}
+let startupCache;
+function failure(error){startupCache?.restore();startupCache?.invalidate().catch(()=>{});console.error(error);loadState('failed');message.textContent='加载未完成，请检查网络后刷新重试。'+String(error.message||error);startLabel.textContent='刷新重试';start.disabled=false;start.onclick=()=>location.reload();}
 if(missing.length){loadState('failed');message.textContent='浏览器缺少所需功能：'+missing.join(', ')+'。请尝试新版 Chrome、Edge 或 Firefox。';startLabel.textContent='暂不支持';}
-else engine.startGame({onProgress:(current,total)=>{if(total>0){progress.value=current/total;message.textContent=current>=total?'食材已备齐，正在开启餐厅……':'正在布置小饭馆 '+Math.round(current/total*100)+'%';}}}).then(()=>{ready=true;loadState('ready');progress.value=1;message.textContent=isChibiPreview?'新伙伴已经准备好了！':'灶台已经热了，店长请进！';startLabel.textContent=isChibiPreview?'查看新伙伴':'走进小饭馆';start.disabled=false;}).catch(failure);
+else (async()=>{startupCache=window.installRestaurantStartupCache?await window.installRestaurantStartupCache(config):null;await engine.startGame({onProgress:(current,total)=>{if(total>0){progress.value=current/total;message.textContent=current>=total?'食材已备齐，正在开启餐厅……':'正在布置小饭馆 '+Math.round(current/total*100)+'%';}}});startupCache?.restore();ready=true;window.__startupReadyMs=performance.now();loadState('ready');progress.value=1;message.textContent=isChibiPreview?'新伙伴已经准备好了！':'灶台已经热了，店长请进！';startLabel.textContent=isChibiPreview?'查看新伙伴':'走进小饭馆';start.disabled=false;})().catch(failure);
 start.onclick=()=>{if(!ready||started)return;started=true;document.getElementById('loading').remove();document.getElementById('canvas').focus();};
 window.addEventListener('keydown',e=>{if(document.activeElement===document.getElementById('canvas')&&['Space','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.code))e.preventDefault();});
 </script>
