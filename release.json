@@ -1,10 +1,10 @@
 {
-  "version": "achievements-1009",
+  "version": "mobile-1009",
   "files": [
     {
       "name": "index.html",
-      "size": 9018,
-      "sha256": "6a1ce381ef2f51ea3f69055f6c684d59e0cdc430f12e703887119e538ef62152"
+      "size": 13741,
+      "sha256": "26a621ce426d69eb7a0504d8ac37aa865bceeda20202fa6c29f8342e33a8b441"
     },
     {
       "name": "index.js",
@@ -18,56 +18,56 @@
     },
     {
       "name": "index.pck",
-      "size": 301335040,
-      "sha256": "a9aeefe8ed7ed574cbcc63aba1912e38cee82fc3de5e941236bed64e4ef215fc",
+      "size": 301335344,
+      "sha256": "0c5ee690c7c01779287a3fe4fb97e3dceda992566ae8bb61fd0edf997b77b2df",
       "chunks": [
         {
           "name": "index.pck.gz.part000",
-          "sha256": "b7610f5ce00ca68d904a5ca724ef31c2716a267014b5f7ccc6d48cb131185e16"
+          "sha256": "7454a83a7226685f3ca5b919252f23baf05da706585b6f4b7316abc764076dd7"
         },
         {
           "name": "index.pck.gz.part001",
-          "sha256": "fde4ef8b11fdf94c6e67bb5ee13832a9797bdd53965c6207fca3607b9e3c3fae"
+          "sha256": "752c59f732e17a9b73d8df5bf18f62fc0e88c0a2ddad285983c4789243a822dd"
         },
         {
           "name": "index.pck.gz.part002",
-          "sha256": "f8474a199ae05235e39ea12ade07ea996c5f160b51507797f78eaa2dc3af2be1"
+          "sha256": "17ab7d7c795d39c08195254e960f58ab7ddd020f56c3d565d486fe5701d1921a"
         },
         {
           "name": "index.pck.gz.part003",
-          "sha256": "cff32e089bcbfcd618db658014755f41739bf8cef4fa11478610ce78187eaa69"
+          "sha256": "5f01744877d8e14316037d9bdbda9ffcb89a2a7628c4d039e2d3d99b04e5d6a6"
         },
         {
           "name": "index.pck.gz.part004",
-          "sha256": "7bff7bf661247483b98bc99358f06c0ccbbeb25ff99a9057b9c78bb2814228cc"
+          "sha256": "5b4391a513b26bb7248249e3a6010be417143f3dc533f1f85be75d10108edd1d"
         },
         {
           "name": "index.pck.gz.part005",
-          "sha256": "ec7402a496ebc416f179205073e26155ed452e9ed3cfa3bdc76a106491cd8b17"
+          "sha256": "7e5e688696f6d1dba85a1dcbd1fc97fb4ddb7c73990f219885ca6b3d64623d66"
         },
         {
           "name": "index.pck.gz.part006",
-          "sha256": "c79fd678510ee31613d4e1406673d7ab2f268336cd141bce6320df8e5adb4c2d"
+          "sha256": "2d7d90a422c06c0c7f3418736d6ac5431136df3cf668a8d190cc0ada0454e3e1"
         },
         {
           "name": "index.pck.gz.part007",
-          "sha256": "9ec7b545daeb0db0fb23e0730fdbec8dee125a88b6833d157dd16acfcf029fd5"
+          "sha256": "322ce97c54ba0e37bace88fd29e35de6c41da19263cada021d8ee6112f89393b"
         },
         {
           "name": "index.pck.gz.part008",
-          "sha256": "1486a00fb2c14f09c90bdf19f1c2b8cff1b4c5f8ea847b000d5173bb486452b1"
+          "sha256": "d53445912e1af6ae7af4a77529dfc90efd1f543ef88659042f0b4f3979d9f26c"
         },
         {
           "name": "index.pck.gz.part009",
-          "sha256": "30fda94691f8a42459fd5d0f48f59c5193fa2a2e11dbcbdbc1a2ae64fa0728d0"
+          "sha256": "f615d216a5175aaee60ecb32ca994d60aa4d65187acdac6d1ee30da691488c10"
         },
         {
           "name": "index.pck.gz.part010",
-          "sha256": "fb3a61f51b8248bca7898c747c1239c93735ab104e7f75055e52df4d58d61bba"
+          "sha256": "b184c1b0d9c4f3f135dd899a653ae6d6bac24e0f4e53ebeb06cff779599ed5df"
         },
         {
           "name": "index.pck.gz.part011",
-          "sha256": "ebe1aee9c1bf6bdab596ab161d44a90e746fbf5bb871373c1215d1356b842677"
+          "sha256": "a77e01a609f1b05d497cb53ba2355d37d4b8229b2d140cb45c12887e3e7f980c"
         }
       ]
     },
@@ -97,6 +97,11 @@
       "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
     },
     {
+      "name": "index.icon.svg",
+      "size": 453,
+      "sha256": "76dda8a533a59e6b7f6b1ed3fcb75a54ba99983cf6b5b261e42c6d2f0c74ecd4"
+    },
+    {
       "name": "cafe-vignette-v1.png",
       "size": 1717139,
       "sha256": "354b55b1e7201607a5e224d3537dfdd61406b0f8f36f4714c17db8c0b41d2a36"
@@ -109,7 +114,17 @@
     {
       "name": "startup-assets.json",
       "size": 299,
-      "sha256": "1e784cf4180d27f460889aea976f7bee4e317adba49ce3da921c9fd2b5d43107"
+      "sha256": "d4b324db8df9f81c951cc2459fc11dbd756aec5edc3c694d073c1dc81b7211cf"
+    },
+    {
+      "name": "mobile-shell.js",
+      "size": 6654,
+      "sha256": "ac09a94b9e830a73bce49b0a565239fd8c4e6ca3a18bc339c021bbf884bbc85c"
+    },
+    {
+      "name": "restaurant.webmanifest",
+      "size": 432,
+      "sha256": "d71f068744c738e1d2fbbe4e68509bb49db47a4f9d4ce19faf925a89dda296cd"
     },
     {
       "name": "achievement-posters/companions-v2.png",

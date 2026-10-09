@@ -3,6 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="大肥鱼的小饭馆">
+<link rel="manifest" href="restaurant.webmanifest">
+<link rel="apple-touch-icon" href="index.apple-touch-icon.png">
 <title>大肥鱼的小饭馆</title>
 <link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
@@ -14,17 +20,31 @@
 #loading[data-state="ready"] .loading-spinner,#loading[data-state="failed"] .loading-spinner{display:none}
 .first-start-note{font-size:12px;line-height:1.7;color:#8b8877;margin:4px 0 12px}
 @keyframes loading-turn{to{transform:rotate(360deg)}}
+#game-stage{position:fixed;inset:0;background:#f0eadc}#game-stage:fullscreen,#game-stage:-webkit-full-screen{width:100%;height:100%;background:#f0eadc}
+body[data-mobile="true"] #game-stage{display:flex;align-items:center;justify-content:center;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+body[data-mobile="true"] #canvas{flex:none;max-width:100%;max-height:100%;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+[hidden]{display:none!important}.mobile-note{font-size:12px;line-height:1.7;color:#527867;margin:8px 0}.mobile-guide{position:fixed;inset:0;z-index:8;display:flex;align-items:center;justify-content:center;padding:24px max(24px,env(safe-area-inset-right)) 24px max(24px,env(safe-area-inset-left));background:#f0eadc}
+.mobile-guide-card{width:min(410px,100%);padding:28px 25px;border:1px solid #d9bea0;border-radius:22px;background:#fffaf0;text-align:center}.mobile-guide h2{font-size:23px;margin:16px 0 10px}.mobile-guide p{font-size:14px;line-height:1.8}.phone-mark{width:62px;height:38px;margin:8px auto;border:3px solid #447b68;border-radius:9px;position:relative}.phone-mark:after{content:"";position:absolute;right:3px;top:12px;width:3px;height:9px;border-radius:3px;background:#447b68}.mobile-action{font:inherit;font-size:15px;min-height:44px;border:1px solid #447b68;border-radius:12px;padding:10px 19px;background:#447b68;color:#fffaf0;margin-top:18px;cursor:pointer}.mobile-floating{position:fixed;z-index:4;right:max(8px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom));width:44px;height:44px;border:1px solid #cdb68f;border-radius:12px;background:#fffaf0;color:#447b68;font-size:25px;cursor:pointer}.mobile-floating.help{bottom:max(60px,calc(env(safe-area-inset-bottom) + 52px));font-size:19px}
+body[data-mobile="true"] #loading{padding:max(10px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));overflow:auto}
+@media(max-height:500px) and (orientation:landscape){body[data-mobile="true"] .card{width:min(640px,100%);padding:20px 28px 16px}body[data-mobile="true"] .card:before{inset:10px}body[data-mobile="true"] .eyebrow{font-size:8px}body[data-mobile="true"] .mark{position:absolute;right:28px;top:28px;width:122px;height:60px;margin:0;opacity:.9}body[data-mobile="true"] h1{font-size:25px;margin:12px 0 6px}body[data-mobile="true"] .card>p{font-size:12px;line-height:1.6}body[data-mobile="true"] progress{margin:12px 0 5px}body[data-mobile="true"] #message{min-height:22px}body[data-mobile="true"] #start{min-height:44px;padding:10px 28px;margin-top:4px}body[data-mobile="true"] .first-start-note{margin:2px 0 5px}body[data-mobile="true"] .small{font-size:10px;line-height:1.5;margin-top:8px}body[data-mobile="true"] .small:before{display:none}body[data-mobile="true"] .mobile-note{margin:5px 0;font-size:11px}}
 </style>
 </head>
 <body>
-<canvas id="canvas" tabindex="0" aria-label="大肥鱼的小饭馆，鼠标操作经营游戏"></canvas>
+<div id="game-stage"><canvas id="canvas" width="1440" height="900" tabindex="0" aria-label="大肥鱼的小饭馆，拖放食材经营游戏"></canvas>
 <div id="loading" data-state="loading" aria-busy="true"><main class="card"><div class="eyebrow">WHALE'S LITTLE KITCHEN</div><div class="mark" aria-hidden="true"><img src="cafe-vignette-v1.png" alt=""></div><h1>大肥鱼的小饭馆</h1><p>一家小店，慢慢经营。<br>让每一碗白饭，都带一点温柔。</p><progress id="progress" value="0" max="1" aria-label="小饭馆加载进度"></progress><div id="message" role="status">正在为小店生火……</div><button id="start" disabled><span class="loading-spinner" aria-hidden="true"></span><span id="start-label">正在加载</span></button><div class="small">拖放食材 · 空格暂停<br>你来配料，豆包掌勺，大肥鱼把热饭送到客人桌上。</div></main></div>
 <noscript>请启用 JavaScript 后再打开游戏。</noscript>
+<div id="rotate-guide" class="mobile-guide" hidden><div class="mobile-guide-card"><div class="phone-mark" aria-hidden="true"></div><h2>横过手机，来小店坐坐</h2><p>横屏可以看清厨房和餐桌。<br>请关闭手机的方向锁定，再横过手机。</p><button id="rotate-fullscreen" class="mobile-action">进入全屏</button></div></div>
+<button id="mobile-fullscreen" class="mobile-floating" aria-label="进入全屏" title="进入全屏" hidden>⛶</button><button id="mobile-help-open" class="mobile-floating help" aria-label="添加到主屏幕的方法" title="添加到主屏幕" hidden>⌂</button>
+<div id="mobile-help" class="mobile-guide" role="dialog" aria-modal="true" aria-label="全屏游玩方法" hidden><div class="mobile-guide-card"><div class="phone-mark" aria-hidden="true"></div><h2>从桌面打开小饭馆</h2><p id="mobile-help-copy"></p><button id="mobile-help-close" class="mobile-action">知道啦</button></div></div>
+</div>
 <script>const firstStartNote=document.createElement('p');firstStartNote.className='first-start-note';firstStartNote.textContent='第一次启动可能会稍慢，请耐心等候';document.getElementById('message').after(firstStartNote);</script>
 <script src="startup-cache.js"></script>
+<script>const mobileStartNote=document.createElement('p');mobileStartNote.id='mobile-start-note';mobileStartNote.className='mobile-note';mobileStartNote.hidden=true;document.getElementById('start').after(mobileStartNote);</script>
+<script src="mobile-shell.js"></script>
 <script src="index.js"></script>
 <script>
-const config = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":301335040,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const config = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":301335344,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+if(window.restaurantMobile?.mobile)config.canvasResizePolicy=0;
 const params=new URLSearchParams(location.search);
 const isChibiPreview=params.has('chibi')||location.pathname.includes('/chibi/');
 if(isChibiPreview){document.querySelector('h1').textContent='小饭馆的新伙伴';document.querySelector('.card p').innerHTML='四位新伙伴，准备来小店帮忙啦。<br>转一转，看一看她们的工作动作。';document.querySelector('.small').innerHTML='切换待机、走路和工作动作<br>选择伙伴放大查看 · 拖动旋转视角';}
@@ -44,7 +64,7 @@ let startupCache;
 function failure(error){startupCache?.restore();startupCache?.invalidate().catch(()=>{});console.error(error);loadState('failed');message.textContent='加载未完成，请检查网络后刷新重试。'+String(error.message||error);startLabel.textContent='刷新重试';start.disabled=false;start.onclick=()=>location.reload();}
 if(missing.length){loadState('failed');message.textContent='浏览器缺少所需功能：'+missing.join(', ')+'。请尝试新版 Chrome、Edge 或 Firefox。';startLabel.textContent='暂不支持';}
 else (async()=>{startupCache=window.installRestaurantStartupCache?await window.installRestaurantStartupCache(config):null;await engine.startGame({onProgress:(current,total)=>{if(total>0){progress.value=current/total;message.textContent=current>=total?'食材已备齐，正在开启餐厅……':'正在布置小饭馆 '+Math.round(current/total*100)+'%';}}});startupCache?.restore();ready=true;window.__startupReadyMs=performance.now();loadState('ready');progress.value=1;message.textContent=isChibiPreview?'新伙伴已经准备好了！':'灶台已经热了，店长请进！';startLabel.textContent=isChibiPreview?'查看新伙伴':'走进小饭馆';start.disabled=false;})().catch(failure);
-start.onclick=()=>{if(!ready||started)return;started=true;document.getElementById('loading').remove();document.getElementById('canvas').focus();};
+start.onclick=()=>{if(!ready||started)return;window.restaurantMobile.begin(()=>{started=true;document.getElementById('loading').remove();document.getElementById('canvas').focus();});};
 window.addEventListener('keydown',e=>{if(document.activeElement===document.getElementById('canvas')&&['Space','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.code))e.preventDefault();});
 </script>
 </body>

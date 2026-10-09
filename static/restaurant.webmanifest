@@ -1,0 +1,14 @@
+{
+  "id": "./",
+  "name": "大肥鱼的小饭馆",
+  "short_name": "大肥鱼小饭馆",
+  "lang": "zh-CN",
+  "start_url": "./?v=mobile-1009",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "landscape",
+  "background_color": "#f0eadc",
+  "theme_color": "#f0eadc",
+  "icons": [{ "src": "index.icon.svg", "type": "image/svg+xml", "sizes": "any", "purpose": "any" }]
+}
