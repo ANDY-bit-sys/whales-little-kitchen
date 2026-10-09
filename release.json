@@ -1,10 +1,10 @@
 {
-  "version": "startup-cache-1009",
+  "version": "achievements-1009",
   "files": [
     {
       "name": "index.html",
       "size": 9018,
-      "sha256": "0a3e9e39d611841412b449d742ebe2076c00b4711c7eaf523c2509d2ca9f7d6d"
+      "sha256": "6a1ce381ef2f51ea3f69055f6c684d59e0cdc430f12e703887119e538ef62152"
     },
     {
       "name": "index.js",
@@ -18,56 +18,56 @@
     },
     {
       "name": "index.pck",
-      "size": 301324388,
-      "sha256": "339db655bf8e72effade8949d21b34e45030d3994e8dbf8a531c10badd9fa437",
+      "size": 301335040,
+      "sha256": "a9aeefe8ed7ed574cbcc63aba1912e38cee82fc3de5e941236bed64e4ef215fc",
       "chunks": [
         {
           "name": "index.pck.gz.part000",
-          "sha256": "f2dd940aeb14856b1625e727d8435abf46e57038c116c852bcf795b38913db46"
+          "sha256": "b7610f5ce00ca68d904a5ca724ef31c2716a267014b5f7ccc6d48cb131185e16"
         },
         {
           "name": "index.pck.gz.part001",
-          "sha256": "6e6a597285ca65c2bdd4e212de931cc2189b60375aa169a0a426e8028907fff1"
+          "sha256": "fde4ef8b11fdf94c6e67bb5ee13832a9797bdd53965c6207fca3607b9e3c3fae"
         },
         {
           "name": "index.pck.gz.part002",
-          "sha256": "eaa060f9e6d43f9cdf778648015e2f35dcd094dd1f404b6ac9db04ce66e6e219"
+          "sha256": "f8474a199ae05235e39ea12ade07ea996c5f160b51507797f78eaa2dc3af2be1"
         },
         {
           "name": "index.pck.gz.part003",
-          "sha256": "3be55320dfc886745acc428c401b8b86a2758e581de38759adaedf85260b1daa"
+          "sha256": "cff32e089bcbfcd618db658014755f41739bf8cef4fa11478610ce78187eaa69"
         },
         {
           "name": "index.pck.gz.part004",
-          "sha256": "cbf509a29c440e11c9f5d0ce7ef9993f2029afd9d8dc1796ca53eaf28ce37963"
+          "sha256": "7bff7bf661247483b98bc99358f06c0ccbbeb25ff99a9057b9c78bb2814228cc"
         },
         {
           "name": "index.pck.gz.part005",
-          "sha256": "94799a2c3e95b38258a2b702c8d7cbc66b70502bdea6a490a579d1dff361a24d"
+          "sha256": "ec7402a496ebc416f179205073e26155ed452e9ed3cfa3bdc76a106491cd8b17"
         },
         {
           "name": "index.pck.gz.part006",
-          "sha256": "ebaf08d01b1f218a6b693320b001d9441dcbf7db398a04dff3df4eeb27fdc177"
+          "sha256": "c79fd678510ee31613d4e1406673d7ab2f268336cd141bce6320df8e5adb4c2d"
         },
         {
           "name": "index.pck.gz.part007",
-          "sha256": "ea73b18e62bc867b7909cc4c8ff05bf1240bbc504bc6ace43cdd4cad4f3c7829"
+          "sha256": "9ec7b545daeb0db0fb23e0730fdbec8dee125a88b6833d157dd16acfcf029fd5"
         },
         {
           "name": "index.pck.gz.part008",
-          "sha256": "4d06d1bc3f13d76647993d1cf504d4782bde4332abf99bef2bcecf1b88931f41"
+          "sha256": "1486a00fb2c14f09c90bdf19f1c2b8cff1b4c5f8ea847b000d5173bb486452b1"
         },
         {
           "name": "index.pck.gz.part009",
-          "sha256": "fdf332b546fc02a9169817fd5314efc68557ee096f44f69949649399695357fb"
+          "sha256": "30fda94691f8a42459fd5d0f48f59c5193fa2a2e11dbcbdbc1a2ae64fa0728d0"
         },
         {
           "name": "index.pck.gz.part010",
-          "sha256": "6b1384910fd102a0e2643349ffb65692a82efd224daf0af89483e45926049e04"
+          "sha256": "fb3a61f51b8248bca7898c747c1239c93735ab104e7f75055e52df4d58d61bba"
         },
         {
           "name": "index.pck.gz.part011",
-          "sha256": "534ecd75221b6bd86bc9f692afaecd62ef27410ed16bf32b3bb0ec9086536762"
+          "sha256": "ebe1aee9c1bf6bdab596ab161d44a90e746fbf5bb871373c1215d1356b842677"
         }
       ]
     },
@@ -109,7 +109,22 @@
     {
       "name": "startup-assets.json",
       "size": 299,
-      "sha256": "e3d233b2cd55ebd9e47c0e2ff17238083b4a0b9d3c5f18bed9beb106127ded4f"
+      "sha256": "1e784cf4180d27f460889aea976f7bee4e317adba49ce3da921c9fd2b5d43107"
+    },
+    {
+      "name": "achievement-posters/companions-v2.png",
+      "size": 2547205,
+      "sha256": "ee4fe869dc89f2b252f128d0a3816134a1f41c17a3f26e491f525655539eddf9"
+    },
+    {
+      "name": "achievement-posters/cafe-v2.png",
+      "size": 2202622,
+      "sha256": "bf2d9ed9cc46ee89501cd2e8f42698bc2de76f1307aa3176be8dc67b95937ccf"
+    },
+    {
+      "name": "achievement-posters/completion-v2.png",
+      "size": 2138461,
+      "sha256": "962665215b40cb47218599cbcfa014b5aa5da0f83487701637e9ae04e9e70816"
     },
     {
       "name": "FONT-LICENSE.txt",

@@ -16,9 +16,13 @@ def assemble(repo, output):
     output.mkdir(parents=True, exist_ok=True)
     for item in manifest['files']:
         name = item['name']
-        if Path(name).name != name:
+        relative = Path(name)
+        if relative.is_absolute() or '..' in relative.parts or '\\' in name:
             raise ValueError('Unexpected asset path')
         target = output / name
+        if not target.resolve().is_relative_to(output.resolve()):
+            raise ValueError('Asset escapes output')
+        target.parent.mkdir(parents=True, exist_ok=True)
         if 'chunks' in item:
             with tempfile.TemporaryFile() as packed:
                 for part in item['chunks']:
