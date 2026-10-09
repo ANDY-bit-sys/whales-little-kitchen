@@ -1,3 +1,4 @@
 *.part* -text
 *.wasm -text
 *.png -text
+static/** -text
