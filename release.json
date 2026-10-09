@@ -1,0 +1,98 @@
+{
+  "version": "next-day-fix-1009",
+  "files": [
+    {
+      "name": "index.html",
+      "size": 8385,
+      "sha256": "b8de581918b86f4e67b1969640aba2af37d94d305f0c53d7267b39db3cff667b"
+    },
+    {
+      "name": "index.js",
+      "size": 279815,
+      "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba"
+    },
+    {
+      "name": "index.wasm",
+      "size": 39514754,
+      "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+    },
+    {
+      "name": "index.pck",
+      "size": 414804756,
+      "sha256": "95865abfcb26b8f2d1592248a91560772b28779c362951c8e5ec6ab998cb98ad",
+      "chunks": [
+        {
+          "name": "index.pck.gz.part000",
+          "sha256": "7574d6c746d1a7ab7bbca72bcd5713b2bbdad26b85037858b07bb798b2b2ca85"
+        },
+        {
+          "name": "index.pck.gz.part001",
+          "sha256": "c12413ceeb15e3f7e8e5211f7c69fbe6d0cb136fab56112bbc1d10077dda34d6"
+        },
+        {
+          "name": "index.pck.gz.part002",
+          "sha256": "e1963ebe1ff66b20aca147c446f278d5086e87c69b7abbe9fb480b4f943de7ad"
+        },
+        {
+          "name": "index.pck.gz.part003",
+          "sha256": "e1db8af42de4e7370563e5930e6743255cb09027d8319c1b125fb15a32ff15ec"
+        },
+        {
+          "name": "index.pck.gz.part004",
+          "sha256": "85a2b8afdf1d1cef30191b6df6ef9a5b029787b91a501b404febb8ad9bf689d3"
+        },
+        {
+          "name": "index.pck.gz.part005",
+          "sha256": "d417fa4a6fac2ff5eb7f32052c0a3172aa90d247ae391aef0e3b3b8adfbb1606"
+        },
+        {
+          "name": "index.pck.gz.part006",
+          "sha256": "c73aba9abe9530edda9323062950111e70694d499b83c48b8f99dbdbd8689c76"
+        },
+        {
+          "name": "index.pck.gz.part007",
+          "sha256": "861c61d07bbb7dd9e7807fd3f7809776342a24cf846fbd1678c60b6f769e8cde"
+        },
+        {
+          "name": "index.pck.gz.part008",
+          "sha256": "dce3e963501473cc41b94f096f679731408da40adc50dcdfb6e59e9bb9170d8d"
+        }
+      ]
+    },
+    {
+      "name": "index.audio.worklet.js",
+      "size": 7298,
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+    },
+    {
+      "name": "index.audio.position.worklet.js",
+      "size": 2973,
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+    },
+    {
+      "name": "index.icon.png",
+      "size": 4412,
+      "sha256": "3a62a6e52d2847757b00593dd0c2330a5a8ec5d77af2fc3a46d156cfdc1bac86"
+    },
+    {
+      "name": "index.apple-touch-icon.png",
+      "size": 9814,
+      "sha256": "3b0102f822faea8c8f75da8c4bf3a9cfa36350687a90f867bab1a7843cde8e75"
+    },
+    {
+      "name": "index.png",
+      "size": 21443,
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
+    },
+    {
+      "name": "cafe-vignette-v1.png",
+      "size": 1717139,
+      "sha256": "354b55b1e7201607a5e224d3537dfdd61406b0f8f36f4714c17db8c0b41d2a36"
+    },
+    {
+      "name": "FONT-LICENSE.txt",
+      "size": 4388,
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    }
+  ]
+}
