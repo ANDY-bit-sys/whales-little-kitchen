@@ -1,10 +1,10 @@
 {
-  "version": "achievement-rules-1009",
+  "version": "lossless-1010",
   "files": [
     {
       "name": "index.html",
       "size": 13741,
-      "sha256": "1fedc93dacac2c7f853788e81cb8e15c0f86687e6ce6184346431a081c64e906"
+      "sha256": "dfb6ef9f89bb89ac376b712c0ab41691be83837a221a9843ed25eb0c6e4c3ae2"
     },
     {
       "name": "index.js",
@@ -18,56 +18,56 @@
     },
     {
       "name": "index.pck",
-      "size": 301335424,
-      "sha256": "e6e4936a750fcfe9b646a7bf1681c0ea9ef77913f0ef7f06ba36711e2813551e",
+      "size": 278814896,
+      "sha256": "1b10c8ac976312254adb1cc67f4aed6ba6c8662fa8e4fd5f7666a6faa08ad494",
       "chunks": [
         {
           "name": "index.pck.gz.part000",
-          "sha256": "89bf0453f2ff9f77bf7790f3ba74f6ca8c493ac5159177cfd5b1bd384496c278"
+          "sha256": "f2552884778d090bba66aee5d692cac7a769879966fcdb7de0feabdb18462750"
         },
         {
           "name": "index.pck.gz.part001",
-          "sha256": "4599e0ba6f5a5abf70ad5280e00e37b7690b6a817517ac927da4cde761f06028"
+          "sha256": "f53232962e1b03273027ad9d5ab7dabdd7f833b4e12e1423a4ab0484861284f1"
         },
         {
           "name": "index.pck.gz.part002",
-          "sha256": "dead85b2d750856a3b17ebe776fd11a8011d0329055805f8dc61710c3ff7e4ea"
+          "sha256": "0b181f98968a41523ed28f5866600d5af0ef0ccb086b27b28651269ea01ca0fb"
         },
         {
           "name": "index.pck.gz.part003",
-          "sha256": "ef492bf6d527c997765bb6a2f5c3f9705f64fe938536d8bbefd9cc03a796f93b"
+          "sha256": "ea36d5f51260c530b4d9c7aa1b8c4c1554b6555c7d37b9eecc40dbd285c23da7"
         },
         {
           "name": "index.pck.gz.part004",
-          "sha256": "bcaa91987c983453773f9f30049c2135abe4439b112c58b3e2d4aedf7575a74c"
+          "sha256": "e9860b4dd2c945596bb42b28e26386b4b1405c6b0cbc0a569d1fa19cff6b5acc"
         },
         {
           "name": "index.pck.gz.part005",
-          "sha256": "5a06073c5f3f6d9e96bf1afd9eb53b8351cac024a437c872ada396affd6ae730"
+          "sha256": "885184d94eb4dbfefbc5ad0e0a85a621016e0e14e844066a285b982afb448532"
         },
         {
           "name": "index.pck.gz.part006",
-          "sha256": "535138aafeabc8ce4497080dac859e3c5ff5f9cb1b1c92520872cf388191f54a"
+          "sha256": "bb67214455447f7598fcaa28ee6ad8878cf42332a34816cc480fac07ede1bb2f"
         },
         {
           "name": "index.pck.gz.part007",
-          "sha256": "0950e016148915ff5bab81b5f5c28d3c8f99138e503ed2c2ee2071d4ff3b2403"
+          "sha256": "64505553b19ea8e047d546eeb61b1bcb8bf513fcf41dc5af64a07757b6428ffe"
         },
         {
           "name": "index.pck.gz.part008",
-          "sha256": "df946d63bc01a79742d3044482b736754d92befe90850a3f939f10a7bacc4f7e"
+          "sha256": "e7ee0f2a974016f0847721a48abc5d770ad28ebccc9ceba195d39c9c99572975"
         },
         {
           "name": "index.pck.gz.part009",
-          "sha256": "e9e5f9b9400dd155602f4989d3bb4f4415b7d7f4e387c7ef623f9829215bf48c"
+          "sha256": "7cef38b22e05dc42ca4c7920e4cac7a8b0d11eb23bda8225e15aa323cdefa8b5"
         },
         {
           "name": "index.pck.gz.part010",
-          "sha256": "a05e90d8a6466b4fb72ea3cd6fc0d608d869ecd6e5fdb30147d8a719cf8ab308"
+          "sha256": "5b8e1c17a862fe8d93959a06a6f156d981c79b6bfce2ec079faa720ffa6e46f1"
         },
         {
           "name": "index.pck.gz.part011",
-          "sha256": "33ef6da67e61d408cd7bccd58155d44f96a93f86608ce741db3dd5be4e03e6b1"
+          "sha256": "3355e26ffd82764bc43e2b75fd90ed014eb5ae61acf0f40a228538c2d10a15f4"
         }
       ]
     },
@@ -114,7 +114,7 @@
     {
       "name": "startup-assets.json",
       "size": 299,
-      "sha256": "ffee03e5b805e60d9346aedb96da32ba1343da62018e295a190ac92eca0e1b20"
+      "sha256": "e5d39e71d30c6c7bf82495c49c388fd3d0cddd97415b096499d72ab932bf0c19"
     },
     {
       "name": "mobile-shell.js",
