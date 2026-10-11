@@ -1,10 +1,10 @@
 {
-  "version": "lossless-1010",
+  "version": "compact-1012",
   "files": [
     {
       "name": "index.html",
       "size": 13741,
-      "sha256": "dfb6ef9f89bb89ac376b712c0ab41691be83837a221a9843ed25eb0c6e4c3ae2"
+      "sha256": "a65e7304b42e8680efcd80434052e8ce365bab3c14eccb9d34bd4d433d208b8f"
     },
     {
       "name": "index.js",
@@ -18,56 +18,32 @@
     },
     {
       "name": "index.pck",
-      "size": 278814896,
-      "sha256": "1b10c8ac976312254adb1cc67f4aed6ba6c8662fa8e4fd5f7666a6faa08ad494",
+      "size": 138661548,
+      "sha256": "d09a785955c98f135a91d139c769346966e10a2a67cdc67af8cec90f66cf601d",
       "chunks": [
         {
           "name": "index.pck.gz.part000",
-          "sha256": "f2552884778d090bba66aee5d692cac7a769879966fcdb7de0feabdb18462750"
+          "sha256": "bf323469158dc1803dad1333602a205040bb347aa413369f273c59b793b32d70"
         },
         {
           "name": "index.pck.gz.part001",
-          "sha256": "f53232962e1b03273027ad9d5ab7dabdd7f833b4e12e1423a4ab0484861284f1"
+          "sha256": "fab88c26a468b5b0d4b128ab5b21d11998356fac2648705fe6c5e35de57f7cb0"
         },
         {
           "name": "index.pck.gz.part002",
-          "sha256": "0b181f98968a41523ed28f5866600d5af0ef0ccb086b27b28651269ea01ca0fb"
+          "sha256": "192553885f06f1ba9c91345de60140047ca693ff0be84494b2f1b3c17c303c56"
         },
         {
           "name": "index.pck.gz.part003",
-          "sha256": "ea36d5f51260c530b4d9c7aa1b8c4c1554b6555c7d37b9eecc40dbd285c23da7"
+          "sha256": "c848d2e4dfaf4803056872f06f51b39f747b543b70d4d793676366f44cf18d01"
         },
         {
           "name": "index.pck.gz.part004",
-          "sha256": "e9860b4dd2c945596bb42b28e26386b4b1405c6b0cbc0a569d1fa19cff6b5acc"
+          "sha256": "d09791c5c15434850888159d2cfdae3f33e1bef0d775be2773212c7f84826491"
         },
         {
           "name": "index.pck.gz.part005",
-          "sha256": "885184d94eb4dbfefbc5ad0e0a85a621016e0e14e844066a285b982afb448532"
-        },
-        {
-          "name": "index.pck.gz.part006",
-          "sha256": "bb67214455447f7598fcaa28ee6ad8878cf42332a34816cc480fac07ede1bb2f"
-        },
-        {
-          "name": "index.pck.gz.part007",
-          "sha256": "64505553b19ea8e047d546eeb61b1bcb8bf513fcf41dc5af64a07757b6428ffe"
-        },
-        {
-          "name": "index.pck.gz.part008",
-          "sha256": "e7ee0f2a974016f0847721a48abc5d770ad28ebccc9ceba195d39c9c99572975"
-        },
-        {
-          "name": "index.pck.gz.part009",
-          "sha256": "7cef38b22e05dc42ca4c7920e4cac7a8b0d11eb23bda8225e15aa323cdefa8b5"
-        },
-        {
-          "name": "index.pck.gz.part010",
-          "sha256": "5b8e1c17a862fe8d93959a06a6f156d981c79b6bfce2ec079faa720ffa6e46f1"
-        },
-        {
-          "name": "index.pck.gz.part011",
-          "sha256": "3355e26ffd82764bc43e2b75fd90ed014eb5ae61acf0f40a228538c2d10a15f4"
+          "sha256": "f20370708e60677047c5054795d1e1ee1dbfada9b043914edece4c6631626be9"
         }
       ]
     },
@@ -114,7 +90,7 @@
     {
       "name": "startup-assets.json",
       "size": 299,
-      "sha256": "e5d39e71d30c6c7bf82495c49c388fd3d0cddd97415b096499d72ab932bf0c19"
+      "sha256": "3c18916585b0f5871c4ae487c8e9e218dc04390153dc352f5930a930c879ba41"
     },
     {
       "name": "mobile-shell.js",
